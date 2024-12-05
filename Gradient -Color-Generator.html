@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient Color Generator</title>
+
+    <!-- Write a function that generates a random linear gradient background for a specific div each time a button is clicked. The gradient should transition between two random colors. -->
+    <style>
+        body {
+            transition: background-color 0.5s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 100%;
+            height: auto;
+
+        }
+
+        .color-btn {
+            width: 20%;
+            height: 300px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            transform: translate(-0%, 50%);
+
+        }
+
+        #colorButton {
+            height: 22px;
+            padding: 34px 60px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 40px 40px;
+            font-size: 15px;
+            font-weight: 500;
+            border: 1px solid black;
+            cursor: pointer;
+            border-radius: 23px;
+
+        }
+
+        #copyColorButton {
+            background-color: #3c3e43b5;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-left: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        #copyColorButton:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="color-btn">
+        <button id="colorButton">Change Background Color</button>
+        <button id="copyColorButton">Copy Gradient Colors</button>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
